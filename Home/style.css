@@ -83,46 +83,101 @@ h1{
     position: relative;
 }
 /* configurando as imagens */
-
-
-/* .tabela{
-    display: flex;
-    align-items: top;
-    position: relative;
-    flex-direction: column;
-} */
-/* .tabela{
-    height: 450px;  
-    width: 350px;
-    background-color: #fff;
-    padding: 60px;
-    
-    /* personalizando o formulário com bordas arredondadas 
-    border: 1px solid rgba(255, 255, 255, 0.8);
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    backdrop-filter: blur(10px);
-    border-radius: 100px;
+.imagem_perfil{
     display: flex;
     flex-direction: column;
-    margin: 0 auto;
-    align-items: center;
-   /* margin-top: 0; 
+}
+.foto_perfil{
+    margin-top: 50px;
+    margin-left: 44%;
+}
+.logo_volgs{
+    margin-left: 10%;
 }
 
-.tabela_dados{
+/* configurando a escrita perfil com selo de verificado */
+
+h2{
+    color: var(--branco);
+    font-family:var(--font2);
+    margin-left: 45%;
+    margin-top: 5px;
+}
+
+.perfil_verifi{
     display: flex;
-    justify-content: space-between;
+    flex-direction: row;
+}
+.verificado{
+    width: 35px;
+    margin-left: 1%;
+}
+
+/* configurando a section tabela perfil */
+.tabela{
+    display: flex;
+    margin-right: 21%;
+    margin-top: -300px;
+}
+
+.tabela_perfil{
+    width: 450px;
+    height:500px;
+
+    border: 5px solid rgba(255, 255, 255, 0.8);
+    background-color: #fff;
+    margin-left: 45%;
+
+    border-radius: 50px;
+    display: flex;
     flex-direction: column;
+
+   
+}
+
+/* alinhando a primeira metade das informalções para a esquerda */
+.tabela_esquerda{
     font-family: var(--font2);
-    text-transform: uppercase; 
     color: var(--cinza);
+    font-size: 20px;
+
+    /* configurando espaço */
+    margin-left: 30px;
+    margin-top: 10px;
+
+    text-align: left;
+        
+}
+.tabela_perfil p {
+    font-family: var(--font2);
+    color: var(--cinza);
+    font-size: 20px;
+    display: flex;
+    margin: 20px;
+    display: flex;
+    position: relative;
     
+}
 
+.tabela_esquerda li{
+    margin-top: 25px;
+}
 
-    width: 230px;
-    height: 140px;
-    margin: 0;
-    border: 0;
-} 
+/* alinhando a primeira metade das informalções para a direita  */
 
-*/
+.tabela_direita{
+    font-family: var(--font2);
+    color: var(--cinza);
+    font-size: 20px;
+
+    /* configurando espaço */
+    margin-right: 30px;
+    margin-top: -290px;
+    text-align: right;
+
+    list-style: none;
+}
+
+.tabela_direita li{
+    margin-top: 25px;
+}
