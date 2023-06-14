@@ -10,12 +10,22 @@
     --verdeC:#BAE8E8;
     --verdeE:#2C698D;
     --cinza: #999999;
+    --verde: #12D76E;
+    --azulbtn:#294ABD;
 
     --font1:'Montserrat Alternates', sans-serif;
     --font2: 'Roboto', sans-serif;
     
 }
 /* configuração do backgoround */
+
+body{
+    background-image: url("../img/Backgronud.png");
+    background-color: var(--azulE);
+    background-position: absolute;
+    background-repeat: no-repeat;
+}
+
 main{
     background-image: url("../img/Backgronud.png");
     background-color: var(--azulE);
@@ -77,7 +87,7 @@ h1{
 .linha img{
     display: flex;
     flex-direction: row;
-    margin: 0px 0px -40px 1100px;
+    margin: 0px 0px -40px 65%;
     width: 70px;
     background-color: var(--azulE);
     position: relative;
@@ -89,7 +99,7 @@ h1{
 }
 .foto_perfil{
     margin-top: 50px;
-    margin-left: 44%;
+    margin-left: 46%;
 }
 .logo_volgs{
     margin-left: 10%;
@@ -107,22 +117,24 @@ h2{
 .perfil_verifi{
     display: flex;
     flex-direction: row;
+    margin-left: 5%;
 }
 .verificado{
-    width: 35px;
-    margin-left: 1%;
+    /* width: 35px; */
+    margin-left:1%;
 }
 
 /* configurando a section tabela perfil */
 .tabela{
     display: flex;
-    margin-right: 21%;
+    margin-right: 18%;
     margin-top: -300px;
+    
 }
 
 .tabela_perfil{
     width: 450px;
-    height:500px;
+    height:530px;
 
     border: 5px solid rgba(255, 255, 255, 0.8);
     background-color: #fff;
@@ -131,9 +143,9 @@ h2{
     border-radius: 50px;
     display: flex;
     flex-direction: column;
-
-   
+    padding: 5px;
 }
+
 
 /* alinhando a primeira metade das informalções para a esquerda */
 .tabela_esquerda{
@@ -144,19 +156,15 @@ h2{
     /* configurando espaço */
     margin-left: 30px;
     margin-top: 10px;
-
     text-align: left;
-        
+  
 }
 .tabela_perfil p {
     font-family: var(--font2);
     color: var(--cinza);
     font-size: 20px;
-    display: flex;
     margin: 20px;
-    display: flex;
-    position: relative;
-    
+   
 }
 
 .tabela_esquerda li{
@@ -181,3 +189,55 @@ h2{
 .tabela_direita li{
     margin-top: 25px;
 }
+
+/* configuração do 'footer' id verificado */
+
+.id{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    }
+
+.id p{
+    color:var(--verde);
+    text-transform: uppercase;
+    display: flex;
+    /* flex-direction: row; */
+}
+
+.id img{
+    height: 35px;
+
+}
+
+
+
+.botao{
+    display: flex;  
+    flex-direction: column;
+    margin-left: 80%;
+    margin-top: -250px;
+}
+
+
+.redirecao{
+    background-color: var(--azulC);
+    border: 1px solid var(--azulbtn);
+    height: 60px;
+    width: 150px;
+    margin-top: 10px;
+    padding: 0 auto;
+    border-radius: 50px;
+}
+
+.redirecao a{
+    text-decoration: none;
+    font-family: var(--font1);
+    color: var(--branco);
+
+    display: flex;
+   justify-content: space-around;
+   margin-top: 15px;
+   
+} 
